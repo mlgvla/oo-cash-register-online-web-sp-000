@@ -3,6 +3,7 @@ require 'pry'
 class CashRegister
   attr_accessor :cash_register, :cash_register_with_discount, :total, :discount, :items
   @items = {}
+  
   def initialize(discount = 0)
     @total = 0
     @discount = discount
@@ -11,12 +12,13 @@ class CashRegister
   def add_item(title, price, quantity = 1)
 
     @total += price * quantity
-    purchase = {}
-    purchase[:title] = title
-    purchase[:price] = price
-    purchase[:quantity] = quantity
-    @items << purchase
     binding.pry
+    # purchase = {}
+    # purchase[:title] = title
+    # purchase[:price] = price
+    # purchase[:quantity] = quantity
+    # @items << purchase
+  
 
   end
 
