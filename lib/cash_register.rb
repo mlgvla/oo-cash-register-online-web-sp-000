@@ -18,7 +18,7 @@ class CashRegister
     purchase[:title] = title
     purchase[:price] = price
     purchase[:quantity] = quantity
-    @items << purchase
+    @items.push(purchase)
     binding.pry
 
   end
