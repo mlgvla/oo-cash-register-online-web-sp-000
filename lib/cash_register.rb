@@ -7,11 +7,12 @@ class CashRegister
 
   def initialize(discount = 0)
     @total = 0
+    @items = Array.new
     @discount = discount
   end
 
   def add_item(title, price, quantity = 1)
-    @items = Array.new
+    
 
     @total += price * quantity
     binding.pry
