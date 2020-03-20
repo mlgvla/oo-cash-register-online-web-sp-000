@@ -11,6 +11,12 @@ class CashRegister
   def add_item(title, price, quantity = 1)
 
     @total += price * quantity
+    purchase = {}
+    purchase[:title] = title
+    purchase[:price] = price
+    purchase[:quantity] = quantity
+    @items << purchase
+    binding.pry
 
   end
 
