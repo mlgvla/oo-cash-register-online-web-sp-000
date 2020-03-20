@@ -11,7 +11,7 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-    @itmes = []
+    @itmes = Array.new
 
     @total += price * quantity
     binding.pry
