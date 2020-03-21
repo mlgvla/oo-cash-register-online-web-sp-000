@@ -15,11 +15,11 @@ class CashRegister
 
     @total += price * quantity
     purchase = {}
-    purchase[:title] = title
+    purchase[:food] = title
     purchase[:price] = price
     purchase[:quantity] = quantity
     binding.pry
-    @items.push(purchase)
+    @items << purchase
     binding.pry
 
   end
