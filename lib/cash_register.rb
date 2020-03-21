@@ -7,7 +7,7 @@ class CashRegister
 
   def initialize(discount = 0)
     @total = 0
-    @items = Hash.new
+    @items = Array.new
     @discount = discount
   end
 
